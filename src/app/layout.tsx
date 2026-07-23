@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { AuthProvider } from "@/context/AuthContext";
+import { CarProvider } from "@/context/CarContext";
 import {Toaster} from "sonner";
 import Navbar from "@/components/Navbar";
 
@@ -31,11 +32,13 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <AuthProvider>
+        <CarProvider>
         <body className="min-h-full flex flex-col">
           <Navbar />
           {children}
           <Toaster position="top-center" richColors />
           </body>
+        </CarProvider>
       </AuthProvider>
     </html>
   );
