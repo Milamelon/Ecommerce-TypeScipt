@@ -40,7 +40,7 @@ export default function RegisterPage() {
             value={fullName}
             onChange={(e) => setFullName(e.target.value)}
             required
-            className="border rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pink-400"
+            className="rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pink-400 text-black"
             placeholder="Tu nombre"
           />
         </div>
@@ -52,7 +52,7 @@ export default function RegisterPage() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="border rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pink-400"
+            className="rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pink-400 text-black"
             placeholder="tucorreo@ejemplo.com"
           />
         </div>
@@ -65,7 +65,7 @@ export default function RegisterPage() {
             onChange={(e) => setPassword(e.target.value)}
             required
             minLength={6}
-            className="border rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pink-400"
+            className="rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pink-400 text-black"
             placeholder="••••••"
           />
         </div>
