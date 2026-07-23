@@ -65,5 +65,32 @@ export function CarProvider({children}: {children: ReactNode}) {
             .filter((item) => item.carQuantity > 0)
         );
     }
+
+    const totalItems = carItems.reduce((sum, item) => sum + item.carQuantity, 0);
+    const totalPrice = carItems.reduce((sum, item) => sum + item.price * item.carQuantity, 0);
+
+    return (
+        <CarContext.Provider
+            value={{
+                carItems,
+                addToCar,
+                removeFromCar,
+                increaseQuantity,
+                decreaseQuantity,
+                totalItems,
+                totalPrice
+            }}
+            >
+            {children}
+            </CarContext.Provider>
+    );
+}
+
+export function useCar() {
+    const context = useContext(CarContext);
+    if (!context) {
+        throw new Error("useCart debe usarse dentro de un CartProvider");
+    }
+    return context;
 }
 
