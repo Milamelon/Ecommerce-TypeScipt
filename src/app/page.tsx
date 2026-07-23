@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <main className="max-w-4xl mx-auto px-4 py-6">
-      <h1 className="text-2xl font-bold mb-4 text-center">Catálogo de Postres 🍰</h1>
+      <h1 className="text-2xl font-bold mb-4 text-center text-black">Catálogo de Postres 🍰</h1>
 
       <div className="flex flex-wrap gap-2 justify-center mb-6">
         {categories.map((cat) => (
