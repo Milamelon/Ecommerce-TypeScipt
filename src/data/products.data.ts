@@ -10,7 +10,7 @@ export const products: Product[] = [
         "price": 28.00,
         "image": "/images/3leches.png",
         "category": "Pasteles y Tortas",
-        "quantity": 10
+        "quantity": 1
     },
     {
         "id": 2,
@@ -19,7 +19,7 @@ export const products: Product[] = [
         "price": 34.00,
         "image": "/images/tartaqueso.jpg",
         "category": "Pasteles y Tortas",
-        "quantity": 10
+        "quantity": 1
     },
     {
         "id": 3,
@@ -28,7 +28,7 @@ export const products: Product[] = [
         "price": 4.50,
         "image": "/images/opera.jpg",
         "category": "Pasteles y Tortas",
-        "quantity": 10
+        "quantity": 1
     },
     {
         "id": 4,
@@ -37,7 +37,7 @@ export const products: Product[] = [
         "price": 30.00,
         "image": "/images/rv.jpg",
         "category": "Pasteles y Tortas",
-        "quantity": 10
+        "quantity": 1
     },
     {
         "id": 5,
@@ -46,7 +46,7 @@ export const products: Product[] = [
         "price": 32.00,
         "image": "/images/sn.jpg",
         "category": "Pasteles y Tortas",
-        "quantity": 10
+        "quantity": 1
     },
     {
         "id": 6,
@@ -55,7 +55,7 @@ export const products: Product[] = [
         "price": 3.00,
         "image": "/images/flanqueso.JPG",
         "category": "Postres Frios",
-        "quantity": 10
+        "quantity": 1
     },
     {
         "id": 7,
@@ -64,7 +64,7 @@ export const products: Product[] = [
         "price": 4.50,
         "image": "/images/tiramisu.jpg",
         "category": "Postres Frios",
-        "quantity": 10
+        "quantity": 1
     },
     {
         "id": 8,
@@ -73,7 +73,7 @@ export const products: Product[] = [
         "price": 3.75,
         "image": "/images/pana.jpg",
         "category": "Postres Frios",
-        "quantity": 10
+        "quantity": 1
     },
     {
         "id": 9,
@@ -82,7 +82,7 @@ export const products: Product[] = [
         "price": 3.50,
         "image": "/images/mousse.jpg",
         "category": "Postres Frios",
-        "quantity": 10
+        "quantity": 1
     },
     {
         "id": 10,
@@ -91,7 +91,7 @@ export const products: Product[] = [
         "price": 4.25,
         "image": "/images/creme.jpg",
         "category": "Postres Frios",
-        "quantity": 10
+        "quantity": 1
     },
     {
         "id": 11,
@@ -100,7 +100,7 @@ export const products: Product[] = [
         "price": 8.50,
         "image": "/images/maca.jpg",
         "category": "Galletas y Pasteleria Individual",
-        "quantity": 10
+        "quantity": 1
     },
     {
         "id": 12,
@@ -109,7 +109,7 @@ export const products: Product[] = [
         "price": 2.50,
         "image": "/images/brownie.jpg",
         "category": "Galletas y Pasteleria Individual",
-        "quantity": 10
+        "quantity": 1
     },
     {
         "id": 13,
@@ -118,7 +118,7 @@ export const products: Product[] = [
         "price": 3.25,
         "image": "/images/potri.jpg",
         "category": "Galletas y Pasteleria Individual",
-        "quantity": 10
+        "quantity": 1
     },
     {
         "id": 14,
@@ -127,7 +127,7 @@ export const products: Product[] = [
         "price": 1.75,
         "image": "/images/chispas.jpg",
         "category": "Galletas y Pasteleria Individual",
-        "quantity": 10
+        "quantity": 1
     },
     {
         "id": 15,
@@ -136,7 +136,7 @@ export const products: Product[] = [
         "price": 6.00,
         "image": "/images/alfa.jpg",
         "category": "Galletas y Pasteleria Individual",
-        "quantity": 10
+        "quantity": 1
     },
     {
         "id": 16,
@@ -145,7 +145,7 @@ export const products: Product[] = [
         "price": 25.00,
         "image": "/images/plimon.jpg",
         "category": "Tartas y pies",
-        "quantity": 10
+        "quantity": 1
     },
     {
         "id": 17,
@@ -154,7 +154,7 @@ export const products: Product[] = [
         "price": 26.00,
         "image": "/images/pmanzana.png",
         "category": "Tartas y pies",
-        "quantity": 10
+        "quantity": 1
     },
     {
         "id": 18,
@@ -163,7 +163,7 @@ export const products: Product[] = [
         "price": 3.50,
         "image": "/images/tsantiago.jpg",
         "category": "Tartas y pies",
-        "quantity": 10
+        "quantity": 1
     },
     {
         "id": 19,
@@ -172,7 +172,7 @@ export const products: Product[] = [
         "price": 30.00,
         "image": "/images/pnuez.png",
         "category": "Tartas y pies",
-        "quantity": 10
+        "quantity": 1
     },
     {
         "id": 20,
@@ -181,7 +181,7 @@ export const products: Product[] = [
         "price": 28.00,
         "image": "/images/tfrutas.jpg",
         "category": "Tartas y pies",
-        "quantity": 10
+        "quantity": 1
     },
     {
         "id": 21,
@@ -190,7 +190,7 @@ export const products: Product[] = [
         "price": 3.50,
         "image": "/images/pistacho.jpg",
         "category": "Helados y Postres Congelados",
-        "quantity": 10
+        "quantity": 1
     },
     {
         "id": 22,
@@ -199,7 +199,7 @@ export const products: Product[] = [
         "price": 4.75,
         "image": "/images/alaska.jpg",
         "category": "Helados y Postres Congelados",
-        "quantity": 10
+        "quantity": 1
     },
     {
         "id": 23,
@@ -208,7 +208,7 @@ export const products: Product[] = [
         "price": 3.00,
         "image": "/images/maracuya.jpg",
         "category": "Helados y Postres Congelados",
-        "quantity": 10
+        "quantity": 1
     },
     {
         "id": 24,
@@ -217,7 +217,7 @@ export const products: Product[] = [
         "price": 4.00,
         "image": "/images/semi.jpg",
         "category": "Helados y Postres Congelados",
-        "quantity": 10
+        "quantity": 1
     },
     {
         "id": 25,
@@ -226,7 +226,7 @@ export const products: Product[] = [
         "price": 4.25,
         "image": "/images/cafe.jpg",
         "category": "Helados y Postres Congelados",
-        "quantity": 10
+        "quantity": 1
     }
 
 
