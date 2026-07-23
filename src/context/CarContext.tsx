@@ -48,5 +48,22 @@ export function CarProvider({children}: {children: ReactNode}) {
         setCarItems((prev) => prev.filter((item) => item.id !== id));
     }
 
+    function increaseQuantity(id: number) {
+        setCarItems((prev) =>
+            prev.map((item) =>
+                item.id === id ? {...item, carQuantity: item.carQuantity + 1} 
+                : item
+            )
+        );
+    }
+
+    function decreaseQuantity(id: number) {
+        setCarItems((prev) =>
+            prev.map((item) =>
+                item.id === id ? { ...item, carQuantity: item.carQuantity - 1 } : item
+            )
+            .filter((item) => item.carQuantity > 0)
+        );
+    }
 }
 
