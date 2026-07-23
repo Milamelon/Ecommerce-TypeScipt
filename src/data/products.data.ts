@@ -170,7 +170,7 @@ export const products: Product[] = [
         "title": "Pay de Nuez Pecana",
         "description": "Una tarta rica y otoñal con un relleno cremoso de jarabe de maple y mantequilla, cubierta densamente con una capa de nueces pecanas enteras y tostadas.",
         "price": 30.00,
-        "image": "/images/pnuez.jpg",
+        "image": "/images/pnuez.png",
         "category": "Tartas y pies",
         "quantity": 10
     },
