@@ -25,10 +25,10 @@ export default function LoginPage() {
   }
 
   return (
-    <main className="flex min-h-screen items-center justify-center px-4 bg-pink-50">
+    <main className="flex min-h-screen items-center justify-center px-4 py-8 bg-pink-50">
       <form
         onSubmit={handleSubmit}
-        className="w-full max-w-sm bg-white p-6 rounded-lg shadow-md flex flex-col gap-4"
+        className="w-full max-w-sm bg-white p-5 sm:p-6 rounded-lg shadow-md flex flex-col gap-4"
       >
         <h1 className="text-xl font-bold text-center text-pink-700">Iniciar Sesión</h1>
 
