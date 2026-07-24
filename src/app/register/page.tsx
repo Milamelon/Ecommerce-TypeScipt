@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
 import { toast } from "sonner";
+import Link from "next/link";
 
 export default function RegisterPage() {
   const [fullName, setFullName] = useState("");
@@ -29,8 +30,12 @@ export default function RegisterPage() {
     <main className="flex min-h-screen items-center justify-center px-4 py-8 bg-pink-50">
       <form
         onSubmit={handleSubmit}
-        className="w-full max-w-sm bg-white p-5 sm:p-6 rounded-lg shadow-md flex flex-col gap-4"
-      >
+        className="w-full max-w-sm bg-white p-5 sm:p-6 rounded-lg shadow-md flex flex-col gap-4">
+
+        <Link href="/" className="text-pink-600 font-semibold">
+        Regresar
+        </Link>
+
         <h1 className="text-xl font-bold text-center text-pink-700">Crear Cuenta</h1>
 
         <div className="flex flex-col gap-1">

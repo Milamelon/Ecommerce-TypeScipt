@@ -3,8 +3,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useCar } from "@/context/CarContext";
+import {useRouter} from "next/navigation";
+import {useAuth} from "@/context/AuthContext";
+import { toast } from "sonner";
+import { generateRecp } from "@/lib/generaterecp";
+import { sendEmail } from "@/lib/sendemail";
 
 export default function CarPage() {
+    const router = useRouter();
+    const { user } = useAuth();
     const {
         carItems,
         removeFromCar,
@@ -28,6 +35,35 @@ export default function CarPage() {
         </Link>
     </main>
     );   
+    }
+
+    async function handleCheckout() {
+    if (!user) {
+        toast.error("Debes iniciar sesión para finalizar tu compra");
+        router.push("/login");
+        return;
+    }
+
+    try {
+        generateRecp({
+        items: carItems,
+        totalPrice,
+        customerName: user.fullName,
+        customerEmail: user.email,
+        });
+
+        await sendEmail({
+        items: carItems,
+        totalPrice,
+        customerName: user.fullName,
+        customerEmail: user.email,
+        });
+
+    toast.success("¡Compra realizada! Revisa tu correo y tu descarga de factura 🎉");
+    } catch (error) {
+        console.error(error);
+        toast.error("Hubo un problema al procesar tu compra. Intenta de nuevo.");
+    }
     }
 
     return (
@@ -93,7 +129,9 @@ export default function CarPage() {
             <p className="text-lg font-bold">
                 Total: <span className="text-pink-600">${totalPrice.toFixed(2)}</span>
             </p>
-            <button className="bg-pink-600 text-white font-semibold px-6 py-2 rounded-full hover:bg-pink-700 transition-colors">
+            <button 
+            onClick={handleCheckout}
+            className="bg-pink-600 text-white font-semibold px-6 py-2 rounded-full hover:bg-pink-700 transition-colors">
                 Finalizar Compra
             </button>
         </div>
