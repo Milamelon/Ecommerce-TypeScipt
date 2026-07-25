@@ -7,7 +7,7 @@ PN211471
 👉 https://dulcespostres-type-scipt.vercel.app/
 
 ## 🎥 Video demostrativo
-👉 
+👉 https://drive.google.com/file/d/1vBbyFoFbXCKPrrResCg_-JAqzEhQ7Bbk/view?usp=sharing
 
 ## 🖥️ Cómo correr el proyecto localmente
 1. Clona el repositorio:
