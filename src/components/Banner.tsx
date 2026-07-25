@@ -4,7 +4,7 @@ export default function Banner() {
     return (
     <div className="relative w-full h-70 sm:h-85 overflow-hidden">
         <Image
-        src="/images/banner-postres.png"
+        src="/images/Banner.png"
         alt="Postres artesanales"
         fill
         priority

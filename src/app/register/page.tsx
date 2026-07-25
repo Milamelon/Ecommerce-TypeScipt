@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
 import { toast } from "sonner";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function RegisterPage() {
   const [fullName, setFullName] = useState("");
@@ -28,13 +29,23 @@ export default function RegisterPage() {
 
   return (
     <main className="flex min-h-screen items-center justify-center px-4 py-8 bg-pink-50">
-      <form
-        onSubmit={handleSubmit}
-        className="w-full max-w-sm bg-white p-5 sm:p-6 rounded-lg shadow-md flex flex-col gap-4">
+      <div className="w-full max-w-3xl bg-white rounded-2xl shadow-md overflow-hidden flex flex-col md:flex-row">
+        <div className="relative w-full aspect-square md:aspect-auto md:h-auto md:w-1/2">
+          <Image
+            src="/images/REGISTRO.png"
+            alt="Postres deliciosos"
+            fill
+            className="object-cover"
+          />
+        </div>
 
-        <Link href="/" className="text-pink-600 font-semibold">
-        Regresar
-        </Link>
+        <form
+          onSubmit={handleSubmit}
+          className="w-full md:w-1/2 p-5 sm:p-8 flex flex-col gap-4 justify-center"
+        >
+          <Link href="/" className="text-pink-600 text-sm font-semibold hover:underline self-start">
+            ← Regresar
+          </Link>
 
         <h1 className="text-xl font-bold text-center text-pink-700">Crear Cuenta</h1>
 
@@ -89,6 +100,7 @@ export default function RegisterPage() {
           </a>
         </p>
       </form>
+      </div>
     </main>
   );
 }

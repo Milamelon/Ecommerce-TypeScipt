@@ -29,7 +29,7 @@ export default function LoginPage() {
   return (
     <main className="flex min-h-screen items-center justify-center px-4 py-8 bg-pink-50">
       <div className="w-full max-w-3xl bg-white rounded-2xl shadow-md overflow-hidden flex flex-col md:flex-row">
-        <div className="relative w-full h-55 md:h-auto md:w-1/2">
+        <div className="relative w-full aspect-square md:aspect-auto md:h-auto md:w-1/2">
           <Image
             src="/images/BIENVENIDO.png"
             alt="Postres deliciosos"
