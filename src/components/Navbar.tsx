@@ -20,7 +20,7 @@ export default function Navbar() {
   
 
   return (
-    <nav className="bg-pink-600 text-white sticky top-0 z-50 shadow-md">
+    <nav className="bg-pink-300 text-white sticky top-0 z-50 shadow-md">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold">
           🍰 Sweet Delight
