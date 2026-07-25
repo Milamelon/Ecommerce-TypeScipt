@@ -23,7 +23,7 @@ export default function Navbar() {
     <nav className="bg-pink-600 text-white sticky top-0 z-50 shadow-md">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold">
-          🍰 Postres App
+          🍰 Sweet Delight
         </Link>
 
         <div className="flex items-center gap-3">

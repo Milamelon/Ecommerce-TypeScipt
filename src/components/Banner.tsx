@@ -14,9 +14,6 @@ export default function Banner() {
         <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-black/10" />
 
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-        <span className="text-pink-200 text-xs sm:text-sm font-semibold uppercase tracking-widest mb-2">
-            Hecho a mano, con amor
-        </span>
         <h1 className="text-3xl sm:text-5xl font-bold text-white mb-3 drop-shadow-md">
             Postres que endulzan tu día 🍰
         </h1>
