@@ -8,6 +8,7 @@ import {useAuth} from "@/context/AuthContext";
 import { toast } from "sonner";
 import { generateRecp } from "@/lib/generaterecp";
 import { sendEmail } from "@/lib/sendemail";
+import Banner from "@/components/Banner";
 
 export default function CarPage() {
     const router = useRouter();

@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import { products } from "@/data/products.data";
 import ProductCard from "@/components/ProductCard";
+import Banner from "@/components/Banner";
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<string>("Todos");
@@ -19,6 +20,9 @@ export default function Home() {
 
   return (
     <main className="max-w-4xl mx-auto px-4 py-6">
+      <Banner />
+
+      <br />
       <h1 className="text-2xl font-bold mb-4 text-center text-black">Catálogo de Postres 🍰</h1>
 
       <div className="flex flex-wrap gap-2 justify-center mb-6">
